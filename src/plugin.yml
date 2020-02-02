@@ -1,4 +1,5 @@
 name: SimpleReport
+main: me.beargoesham.report.ReportCore
 version: 1.0
 description: First Spigot Plugin
 author: BearGoesHam

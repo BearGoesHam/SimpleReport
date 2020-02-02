@@ -1,0 +1,6 @@
+#Notify Permission: simplereport.notify
+messages:
+  format: "&7[&c&l!&7]&c %player_name% &7Has reported&c %target_name% &7for&c %reason%"
+  sent: "&7[&c&l!&7]Your report has been sent."
+  error_arguments: "&7[&c&l!&7]&cError. Invalid Arguments."
+  error_player_invalid: "&7[&c&l!&7]&cError. Invalid Player."

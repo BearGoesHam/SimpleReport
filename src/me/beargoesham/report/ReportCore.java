@@ -4,17 +4,19 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ReportCore extends JavaPlugin
 {
-    private ReportCore instance;
+    private static ReportCore instance;
 
-    public ReportCore getInstance()
+    public static ReportCore getInstance()
     {
-        return this.instance;
+        return instance;
     }
 
     public void onEnable()
     {
         instance = this;
 
+        this.getConfig().options().copyDefaults(true);
+        this.saveConfig();
 
         registerCommands();
 
