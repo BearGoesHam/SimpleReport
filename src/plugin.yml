@@ -1,0 +1,7 @@
+name: SimpleReport
+version: 1.0
+description: First Spigot Plugin
+author: BearGoesHam
+commands:
+  report:
+    description: Well, it's a report command

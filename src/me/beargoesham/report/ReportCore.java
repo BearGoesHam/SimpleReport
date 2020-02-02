@@ -15,12 +15,24 @@ public class ReportCore extends JavaPlugin
     {
         instance = this;
 
+
+        registerCommands();
+
         System.out.println("-----------------------------");
         System.out.println("    Simple Report Started    ");
         System.out.println("       By: BearGoesHam       ");
         System.out.println("-----------------------------");
+    }
+
+    public void onDisable()
+    {
+        instance = null;
+    }
 
 
+    public void registerCommands()
+    {
+        getCommand("report").setExecutor(new ReportCmd());
     }
 
 
